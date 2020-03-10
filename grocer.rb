@@ -37,7 +37,7 @@ def consolidate_cart(cart)
     if (!lookup_hash[name])
       lookup_hash[name] = 1
       new_cart << cart[i][:item]
-      new_cart[:count] = 1
+      new_cart[-1][:count] = 1
       
     else 
       j = 0
