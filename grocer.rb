@@ -140,4 +140,5 @@ def checkout(cart, coupons)
     grand_total = grand_total * (1 - 0.100)
     grand_total.round(2)
   end
+  
 end
