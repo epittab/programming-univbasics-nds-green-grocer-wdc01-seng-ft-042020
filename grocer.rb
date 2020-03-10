@@ -131,7 +131,7 @@ def checkout(cart, coupons)
   i = 0
   grand_total = 0
   while (i < updated_cart_w_coupons_clearance.length) do
-    grand_total += updated_cart_w_coupons_clearance[i][:price] * updated_cart_w_coupons_clearance[i]
+    grand_total += updated_cart_w_coupons_clearance[i][:price] * updated_cart_w_coupons_clearance[i][:count]
     
     i += 1
   end
