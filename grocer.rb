@@ -29,7 +29,7 @@ def consolidate_cart(cart)
   
   i = 0 
   
-  while (cart.length) do 
+  while (i < cart.length) do 
     
     
     i += 1
