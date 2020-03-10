@@ -72,25 +72,22 @@ def apply_clearance(cart)
   #
   # REMEMBER: This method **should** update cart
   
-  updated_cart = []
+  
   
   i = 0 
   while (i < cart.length) do
     
-    if (!cart[i][:clearance])
-      updated_cart << cart[i]
-    else
+    if (cart[i][:clearance])
       price = cart[i][:clearance] * 0.2
       price = cart[i][:clearance] - price
       price.round(2)
       cart[i][:clearance] = price
-      updated_cart << cart[i]
     end
     
     i += 1
   end
   
-  return updated_cart
+  return cart
   
 end
 
