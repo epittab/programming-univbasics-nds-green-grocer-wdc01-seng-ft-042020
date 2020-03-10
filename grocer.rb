@@ -28,6 +28,7 @@ def consolidate_cart(cart)
   new_cart = []
   lookup_hash = {}
   
+  puts cart
   i = 0 
   
   while (i < cart.length) do
