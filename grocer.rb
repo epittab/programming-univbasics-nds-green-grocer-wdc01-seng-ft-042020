@@ -36,14 +36,17 @@ def consolidate_cart(cart)
   end
   
   while (i < cart.length) do 
-    
+    found = false
     j = 0
       while (j < new_cart.length) do
         if (new_cart[j][:item] == cart[i][:item])
           new_cart[j][:count] += 1
+          found = true
         end
         j += 1
       end 
+      if (!found)
+        
       i += 1
     end
   end 
