@@ -71,7 +71,7 @@ def apply_coupons(cart, coupons)
       if (cart[i][:item] == coupons[j][:item] && cart[i][:count] >= coupons[j][:num])
         
         coupon_item = {
-          :item => ,
+          :item => "#{cart[i][:item]} W/COUPON",
           :price => coupons[j][:price]/coupons[j][:num],
           :clearance => cart[i][:clearance],
           :count => coupons[j][:num]
