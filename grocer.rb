@@ -26,35 +26,9 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
   new_cart = []
-  lookup_hash = {}
   
-  puts cart
-  i = 0 
   
-  while (i < cart.length) do
-    
-    name = cart[i][:item]
-    
-    if (!lookup_hash[name])
-      lookup_hash[name] = 1
-      new_cart << cart[i][:item]
-      new_cart[-1][:count] = 1
-      
-    else 
-      j = 0
-       while (j < new_cart.length) do
-         if new_cart[j][:item] == name
-           new_cart[j][:count] += 1
-          end
-         j += 1
-       end
-      
-    end
-    
-    i += 1
-  end
   
-  puts new_cart
   return new_cart
   
 end
