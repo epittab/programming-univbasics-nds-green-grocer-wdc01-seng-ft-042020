@@ -46,8 +46,8 @@ def consolidate_cart(cart)
         j += 1
       end 
       if (!found)
-        new_cart << cart[0]
-        new_cart[0][:count] = 1
+        new_cart << cart[i]
+        new_cart[-1][:count] = 1
       end
       i += 1
     end
