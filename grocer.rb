@@ -125,11 +125,11 @@ def checkout(cart, coupons)
   # some irritated customers
   
   updated_cart = consolidate_cart(cart)
-  puts updated_cart
+ 
   updated_cart_w_coupons = apply_coupons(updated_cart, coupons)
-  puts updated_cart_w_coupons
+
   updated_cart_w_coupons_clearance = apply_clearance(updated_cart_w_coupons)
-  puts updated_cart_w_coupons_clearance
+
   
   i = 0
   grand_total = 0
