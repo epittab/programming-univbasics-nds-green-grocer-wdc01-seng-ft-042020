@@ -144,4 +144,6 @@ def checkout(cart, coupons)
     grand_total.round(2)
   end
   
+  return grand_total
+  
 end
