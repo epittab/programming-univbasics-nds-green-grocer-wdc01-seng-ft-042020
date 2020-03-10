@@ -67,8 +67,10 @@ def apply_coupons(cart, coupons)
     
     j = 0 
     while ( j < coupons.length) do 
+      
+      if (cart[i][:item] == coupons[j][:item])
     
-    
+      end
     
       j += 1
     end
