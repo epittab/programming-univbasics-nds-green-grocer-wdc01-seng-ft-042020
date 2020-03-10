@@ -44,7 +44,7 @@ def consolidate_cart(cart)
        while (j < new_cart.length) do
          if new_cart[j][:item] == name
            new_cart[:count] += 1
-          end
+        end
          j += 1
        end
       
