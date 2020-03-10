@@ -68,8 +68,17 @@ def apply_coupons(cart, coupons)
     j = 0 
     while ( j < coupons.length) do 
       
-      if (cart[i][:item] == coupons[j][:item])
-    
+      if (cart[i][:item] == coupons[j][:item] && cart[i][:count] >= coupons[j][:num])
+        
+        coupon_item = {
+          :item => ,
+          :price => ,
+          :clearance => ,
+          :count => coupons[j][:num]
+        }
+        
+        cart[i][:count] -=  
+        
       end
     
       j += 1
