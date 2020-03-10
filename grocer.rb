@@ -27,11 +27,12 @@ def consolidate_cart(cart)
   
   new_cart = []
   
-  i = 1 
+  i = 0 
   
   if new_cart.length == 0 
     new_cart << cart[0]
     new_cart[0][:count] = 1
+    i += 1
   else 
     while (i < cart.length) do 
     
