@@ -128,5 +128,13 @@ def checkout(cart, coupons)
   updated_cart_w_coupons = apply_coupons(updated_cart)
   updated_cart_w_coupons_clearance = apply_clearance(updated_cart_w_coupons)
   
+  i = 0
+  
+  while (i < updated_cart_w_coupons_clearance.length) do
+    
+    
+    i += 1
+  end
+  
   
 end
