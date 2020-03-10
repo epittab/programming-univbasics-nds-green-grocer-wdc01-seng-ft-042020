@@ -70,8 +70,6 @@ def apply_coupons(cart, coupons)
       
       if (cart[i][:item] == coupons[j][:item] && cart[i][:count] >= coupons[j][:num])
         
-#        updated_price = coupons[j][:price]/coupons[j][:num]
-        
         coupon_item = {
           :item => "#{cart[i][:item]} W/COUPON",
           :price => coupons[j][:cost]/coupons[j][:num],
