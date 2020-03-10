@@ -129,9 +129,9 @@ def checkout(cart, coupons)
   updated_cart_w_coupons_clearance = apply_clearance(updated_cart_w_coupons)
   
   i = 0
-  
+  grand_total = 0
   while (i < updated_cart_w_coupons_clearance.length) do
-    
+    grand_total += updated_cart_w_coupons_clearance[i][:price] * updated_cart_w_coupons_clearance[i]
     
     i += 1
   end
